@@ -7,9 +7,9 @@
 ![license](https://img.shields.io/github/license/leoraclet/dynamixel)
 ![language](https://img.shields.io/github/languages/top/leoraclet/dynamixel)
 ![lastcommit](https://img.shields.io/github/last-commit/leoraclet/dynamixel) <br>
-![Language](https://img.shields.io/badge/Language-Python-1d50de)
+![Language](https://img.shields.io/badge/Language-C-1d50de)
 ![Libraries](https://img.shields.io/badge/Framework-STM32-fa8925)
-![Size](https://img.shields.io/badge/Size-1.6Mo-f12222) ![Open
+![Size](https://img.shields.io/badge/Size-6.7Mo-f12222) ![Open
 Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
 
 
