@@ -45,6 +45,7 @@
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+
 uint8_t data[10];
 uint16_t pos, spd, load;
 uint8_t baudrate, moving, volt, temp;
@@ -103,46 +104,25 @@ int main(void)
   while (1)
   {
 	  /*
-	HAL_Delay(500);
-	dynamixel_set_led(&huart2, BROADCAST_ID, 1);
-	HAL_Delay(500);
-	dynamixel_set_moving_speed(&huart2, BROADCAST_ID, 100);
-	HAL_Delay(500);
-	dynamixel_set_torque_enable(&huart2, BROADCAST_ID, 1);
-	HAL_Delay(500);
-	dynamixel_set_goal_position(&huart2, BROADCAST_ID, 1000);
-	HAL_Delay(500);
-	*/
-
-	/*
-	HAL_Delay(1000);
-	dynamixel_set_torque_enable(&huart2, BROADCAST_ID, 1);
-	dynamixel_set_goal_position(&huart2, BROADCAST_ID, 1000);
-	*/
-
-	/*
-	dynamixel_set_led(&huart2, BROADCAST_ID, 1);
-	HAL_Delay(500);
-	//pos = dynamixel_read_present_position(&huart2, BROADCAST_ID);
-	HAL_Delay(500);
-	dynamixel_set_baudrate(&huart2, BROADCAST_ID, 0xFF);
-	*/
+    HAL_Delay(500);
+    dynamixel_set_led(&huart2, BROADCAST_ID, 1);
+    HAL_Delay(500);
+    dynamixel_set_moving_speed(&huart2, BROADCAST_ID, 100);
+    HAL_Delay(500);
+    dynamixel_set_torque_enable(&huart2, BROADCAST_ID, 1);
+    HAL_Delay(500);
+    dynamixel_set_goal_position(&huart2, BROADCAST_ID, 1000);
+    HAL_Delay(500);
+    */
 
 
-	dynamixel_set_led(&huart2, 10, 1);
-	HAL_Delay(500);
-	dynamixel_set_torque_enable(&huart2, 10, 1);
-	HAL_Delay(500);
-	dynamixel_set_endless_turn(&huart2, 10, 500, CW_DIRECTION);
-	HAL_Delay(500);
-	HAL_GPIO_TogglePin(GPIOC, LED_Pin);
-
-
-	/*
-	dynamixel_set_id(&huart2, BROADCAST_ID, dyn_id);
-	HAL_Delay(500);
-	dyn_id++;
-	*/
+    dynamixel_set_led(&huart2, 10, 1);
+    HAL_Delay(500);
+    dynamixel_set_torque_enable(&huart2, 10, 1);
+    HAL_Delay(500);
+    dynamixel_set_endless_turn(&huart2, 10, 500, CW_DIRECTION);
+    HAL_Delay(500);
+    HAL_GPIO_TogglePin(GPIOC, LED_Pin);
 
     /* USER CODE END WHILE */
 
